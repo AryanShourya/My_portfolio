@@ -18,24 +18,24 @@ export default function Navbar() {
       }
     }
   return (
-    <div className={`fixed bg-[${mode}] text-[${textCol}]  
+    <div className={`fixed bg-white text-gray-800 
                      md:justify-items-center 
                      content-center min-h-15 w-screen top-1 sm:min-w-[500px] 
-                     border-b-1`}> 
+                     border-neutral-300 border-b-1`}> 
       <div className="flex md:hidden ">
         <ul className="justify-between p-2 flex w-screen">
             <li>
-                <a href="" className="text-xl font-bold">SHOURYA</a> 
+                <a href="/" className="text-xl font-bold">SHOURYA</a> 
             </li>
             <li>
-                <a href="" >
+                <button >
                 <span className="material-symbols-outlined dark:fill-neutral-200">menu</span>
-                </a>
+                </button>
             </li>
         </ul>
       </div>
-      <div className="lg:max-w-[1100px] hidden md:flex bg-green  items-center
-                      justify-between sm:w-screen">
+      <div className="lg:max-w-5xl hidden md:flex bg-green  items-center
+                      justify-between sm:w-screen ">
         <ul className="p-2 md:flex space-x-4 font-medium">
             <li>
                <a href="" className="text-xl font-bold">SHOURYA</a> 
@@ -62,8 +62,9 @@ export default function Navbar() {
             </li>
             <li>
                 <a href="">
-                    <img className="size-6" src="src\resources\svg\github-142-svgrepo-com.svg"/>
+                    <img className="size-6 " src="src\resources\svg\github-142-svgrepo-com.svg"/>
                 </a>
+                
             </li>
             <li>
                 <a href="">

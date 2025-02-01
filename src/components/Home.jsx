@@ -4,8 +4,10 @@ function Home() {
   return (
     <>
     <div className=" justify-items-center">
-      <div className=" mt-40 items-center">
-        <a href="" className="bg-gray-200 p-2 flex rounded-full items-center">
+      <div className=" mt-40 items-center p-1 ">
+        <a href="" className="bg-gray-200 p-2 flex rounded-full items-center
+                              shadow-md transition delay-700 duration-500
+                              ease-in-out hover:scale-110 hover:translate-y-1">
         <label >Check out my GitHub</label>
         <span className="material-symbols-outlined ml-2 mr-2">open_in_new</span>
         </a>
