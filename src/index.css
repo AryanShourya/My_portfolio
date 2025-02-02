@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-*{
-    @apply transition-colors duration-200
+@utility skills-div{
+    @apply transition duration-200 hover:scale-110  ;
 }

@@ -1,33 +1,28 @@
 //import React from 'react'
-import { useState } from "react";
-export default function Navbar() {
+import PropTypes from "prop-types"
 
-    const [mode,setmode]=useState("white");
-    const [textCol,setTextCol] = useState("black");
+
+export default function Navbar(props) {
+
     
-    const changeTheme=()=>{
-      if(mode =="white")
-      {
-        setmode("#000000");
-        setTextCol("White");
-        
-      }
-      else{
-        setmode("white");
-        setTextCol("black");
-      }
-    }
   return (
-    <div className={`fixed bg-white text-gray-800 
+    <nav className={`fixed bg-${props.mode} text-${props.textColor}
                      md:justify-items-center 
                      content-center min-h-15 w-screen top-1 sm:min-w-[500px] 
                      border-neutral-300 border-b-1`}> 
-      <div className="flex md:hidden ">
-        <ul className="justify-between p-2 flex w-screen">
-            <li>
-                <a href="/" className="text-xl font-bold">SHOURYA</a> 
+      <div className="flex md:hidden justify-between">
+        <ul className=" p-2 flex w-screen">
+            <li >
+                <a href="/" className="text-xl font-bold">{props.name}</a> 
             </li>
-            <li>
+        </ul>
+        <ul className="flex p-2 space-x-4">
+            <li >
+                <button onClick={props.changeTheme}>
+                    <span className="material-symbols-outlined ">dark_mode</span>
+                </button>
+            </li>
+            <li >
                 <button >
                 <span className="material-symbols-outlined dark:fill-neutral-200">menu</span>
                 </button>
@@ -38,7 +33,7 @@ export default function Navbar() {
                       justify-between sm:w-screen ">
         <ul className="p-2 md:flex space-x-4 font-medium">
             <li>
-               <a href="" className="text-xl font-bold">SHOURYA</a> 
+               <a href="" className="text-xl font-bold">{props.name}</a> 
             </li>
             <li>
                 <a href="" className="hover:text-slate-500">Technologies</a>
@@ -56,7 +51,7 @@ export default function Navbar() {
 
         <ul className="p-2 flex space-x-4">
             <li>
-                <button onClick={changeTheme}>
+                <button onClick={props.changeTheme}>
                     <span className="material-symbols-outlined ">dark_mode</span>
                 </button>
             </li>
@@ -64,7 +59,6 @@ export default function Navbar() {
                 <a href="">
                     <img className="size-6 " src="src\resources\svg\github-142-svgrepo-com.svg"/>
                 </a>
-                
             </li>
             <li>
                 <a href="">
@@ -74,6 +68,14 @@ export default function Navbar() {
             
         </ul>
       </div>
-    </div>
-  )
+    </nav>
+  );
+}
+
+Navbar.propTypes = {
+    mode : PropTypes.string,
+    textColor : PropTypes.string,
+    firstelement :PropTypes.string,
+    name: PropTypes.string,
+    changeTheme:PropTypes.func
 }
