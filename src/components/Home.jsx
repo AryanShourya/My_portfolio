@@ -3,11 +3,14 @@ import PropTypes from "prop-types"
 function Home(props) {
   return (
     <>
-    <div className={`justify-items-center text-${props.textColor}`}>
+    <section id="home">
+    <div className={`justify-items-center  text-${props.textColor}`}>
       <div className=" mt-40 items-center p-1 text-black">
-        <a href="" className="bg-gray-200 p-2 flex rounded-full items-center
+        <a href="" className="bg-gradient-to-r from-purple-300 to-blue-300
+                               p-2 flex rounded-full items-center
                               shadow-md transition delay-200 duration-400
-                              ease-in-out hover:scale-110 hover:translate-y-1">
+                              ease-in-out hover:scale-110 hover:translate-y-1
+                              outline-blue-500 outline ">
         <label>Check out my GitHub</label>
         <span className="material-symbols-outlined ml-2 mr-2">open_in_new</span>
         </a>
@@ -22,8 +25,10 @@ function Home(props) {
           exploring <strong>AI tools</strong>, and building meaningful projects.</p>
 
         <div className="flex justify-items-center ">
-          <img src="src\resources\svg\ace-of-spades.svg" name="my-logo" 
+          <div >
+          <img src="src\resources\pictures\ace-of-spades.png" name="my-logo" 
              itemID="my-logo" className="size-8 mt-5" />
+          </div>
           <label className="text-lg font-semibold mt-5" htmlFor="my-logo">Aryan Shourya</label>
         </div>
       </div>
@@ -39,6 +44,7 @@ function Home(props) {
       </div>
 
     </div>
+    </section>
     </>
   )
 }
