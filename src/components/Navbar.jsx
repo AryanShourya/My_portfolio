@@ -1,15 +1,19 @@
-//import React from 'react'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 import PropTypes from "prop-types"
+import { Link } from "react-scroll";
 
 
 export default function Navbar(props) {
 
     
   return (
-    <nav className={`fixed bg-${props.mode} text-${props.textColor}
+    <nav className={`fixed block bg-${props.mode} text-${props.textColor}
                      md:justify-items-center 
                      content-center min-h-15 w-screen top-1 sm:min-w-[500px] 
-                     border-neutral-300 border-b-1`}> 
+                     border-neutral-300 border-b-[0.3px]`}> 
       <div className="flex md:hidden justify-between">
         <ul className=" p-2 flex w-screen">
             <li >
@@ -18,10 +22,16 @@ export default function Navbar(props) {
         </ul>
         <ul className="flex p-2 space-x-4">
             <li >
-                <button onClick={props.changeTheme}>
-                    <span className="material-symbols-outlined ">dark_mode</span>
+                <button onClick={props.changeTheme} 
+                    className={`${props.mode =='white'?"hidden":"block"}`}>
+                    <DarkModeIcon />
+                </button>
+                <button onClick={props.changeTheme} 
+                    className={`${props.mode=="black"?"hidden":"block"}`}>
+                    <LightModeIcon/>
                 </button>
             </li>
+
             <li >
                 <button >
                 <span className="material-symbols-outlined dark:fill-neutral-200">menu</span>
@@ -33,36 +43,43 @@ export default function Navbar(props) {
                       justify-between sm:w-screen ">
         <ul className="p-2 md:flex space-x-4 font-medium">
             <li>
-               <a href="" className="text-xl font-bold">{props.name}</a> 
+               <Link to="home" smooth="true" duration={600} offset={-80}
+               className="text-xl font-bold">{props.name}</Link> 
             </li>
             <li>
-                <a href="" className="hover:text-slate-500">Technologies</a>
+                <Link to="tech" smooth="true" duration={600} offset={-40}
+                className="hover:text-slate-500">Technologies</Link>
             </li>
             <li>
-                <a className="hover:text-slate-500" href="">Projects</a>
+                <Link to='project' className="hover:text-slate-500" >Projects</Link>
             </li>
             <li>
-                <a className="hover:text-slate-500" href="">Contact</a>
+                <Link to='contact' className="hover:text-slate-500" >Contact</Link>
             </li>
             <li>
-                <a className="hover:text-slate-500" href="">Profile</a>
+                <a href='' className="hover:text-slate-500" >Profile</a>
             </li>
         </ul>
 
-        <ul className="p-2 flex space-x-4">
+        <ul className="p-2 hidden md:flex space-x-4">
             <li>
-                <button onClick={props.changeTheme}>
-                    <span className="material-symbols-outlined ">dark_mode</span>
+                <button onClick={props.changeTheme} 
+                    className={`${props.mode=='white'?"hidden":"block"}`}>
+                    <DarkModeIcon/>
+                </button>
+                <button onClick={props.changeTheme} 
+                    className={`${props.mode=='black'?"hidden":"block"}`}>
+                    <LightModeIcon/>
                 </button>
             </li>
             <li>
                 <a href="">
-                    <img className="size-6 " src="src\resources\svg\github-142-svgrepo-com.svg"/>
+                    <GitHubIcon />
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="src\resources\svg\logo-linkedin-svgrepo-com.svg" className="size-7" />
+                    <LinkedInIcon />
                 </a>
             </li>
             
