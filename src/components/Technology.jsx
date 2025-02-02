@@ -13,7 +13,7 @@ export default function Technology(props) {
           Tools and technologies I use to create solutions</p>
       </div>
 
-      <div className="justify-items-center font-bold text-l mt-5 uppercase scale-80
+      <div className="justify-items-center font-bold text-l mt-5 scale-80
                        md:scale-100">
         
         <ul className="p-4 gap-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 ">
@@ -24,7 +24,7 @@ export default function Technology(props) {
               </div>
 
               <div className="justify-items-center">
-                <h2>html</h2>
+                <h2>HTML</h2>
               </div>
             </div>
           </li>
@@ -36,7 +36,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>css</h2>
+                <h2>CSS</h2>
               </div>
             </div>
           </li>
@@ -48,7 +48,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>javascript</h2>
+                <h2>JavaScript</h2>
               </div>
             </div>
           </li>
@@ -72,7 +72,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>c++</h2>
+                <h2>C++</h2>
               </div>
             </div>
           </li>
@@ -84,7 +84,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>React.js</h2>
+                <h2>ReactJs</h2>
               </div>
             </div>
           </li>
@@ -96,7 +96,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>Tailwind css</h2>
+                <h2>Tailwind CSS</h2>
               </div>
             </div>
           </li>
@@ -120,7 +120,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>streamlit</h2>
+                <h2>Streamlit</h2>
               </div>
             </div>
           </li>
@@ -132,7 +132,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>langchain</h2>
+                <h2>Langchain</h2>
               </div>
             </div>
           </li>
@@ -144,7 +144,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>mysql</h2>
+                <h2>MySQL</h2>
               </div>
             </div>
           </li>
@@ -156,7 +156,7 @@ export default function Technology(props) {
               </div>
               
               <div className="justify-items-center">
-                <h2>vercel</h2>
+                <h2>Vercel</h2>
               </div>
             </div>
           </li>
