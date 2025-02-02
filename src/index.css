@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
 @utility skills-div{
-    @apply transition duration-200 hover:scale-110  ;
+    @apply transition duration-200 hover:scale-110 p-5 justify-items-center;
+}
+
+@utility skills-border{
+    @apply items-center shadow-xl p-2 rounded-lg border-[0.5px] border-gray-400 
+            mb-2;
 }
