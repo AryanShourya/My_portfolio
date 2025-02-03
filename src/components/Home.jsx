@@ -33,7 +33,7 @@ function Home(props) {
         </div>
       </div>
 
-      <div className="text-xl md:text-4xl font-bold mt-20 p-2 ">
+      <div className="text-3xl md:text-5xl font-bold mt-20 p-2 ">
         <h2>Exploring Web Development</h2>
       </div>
       <div className="justify-items-center p-4 mt-10">
