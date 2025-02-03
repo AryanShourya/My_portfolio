@@ -10,8 +10,8 @@ export default function Navbar(props) {
 
     
   return (
-    <nav className={`fixed block bg-${props.mode} text-${props.textColor}
-                     md:justify-items-center 
+    <nav className={`fixed  bg-${props.mode}/80 text-${props.textColor}
+                     md:justify-items-center backdrop-blur-lg z-50
                      content-center min-h-15 w-screen top-1 sm:min-w-[500px] 
                      border-neutral-300 border-b-[0.3px]`}> 
       <div className="flex md:hidden justify-between">
@@ -34,7 +34,8 @@ export default function Navbar(props) {
 
             <li >
                 <button >
-                <span className="material-symbols-outlined dark:fill-neutral-200">menu</span>
+                <span className="material-symbols-outlined dark:fill-neutral-200">
+                    menu</span>
                 </button>
             </li>
         </ul>
@@ -44,17 +45,19 @@ export default function Navbar(props) {
         <ul className="p-2 md:flex space-x-4 font-medium">
             <li>
                <Link to="home" smooth="true" duration={600} offset={-80}
-               className="text-xl font-bold">{props.name}</Link> 
+               className="text-xl font-bold cursor-pointer">{props.name}</Link> 
             </li>
             <li>
                 <Link to="tech" smooth="true" duration={600} offset={-40}
-                className="hover:text-slate-500">Technologies</Link>
+                className="hover:text-slate-500 cursor-pointer">Technologies</Link>
             </li>
             <li>
-                <Link to='project' className="hover:text-slate-500" >Projects</Link>
+                <Link to='project' className="hover:text-slate-500 cursor-pointer">
+                Projects</Link>
             </li>
             <li>
-                <Link to='contact' className="hover:text-slate-500" >Contact</Link>
+                <Link to='contact' className="hover:text-slate-500 cursor-pointer">
+                Contact</Link>
             </li>
             <li>
                 <a href='' className="hover:text-slate-500" >Profile</a>
