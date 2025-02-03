@@ -3,6 +3,7 @@ import Home from './components/Home'
 import Technology from './components/Technology'
 import './App.css'
 import { useState } from 'react'
+//import Sidebar from './components/Sidebar'
 //import PropTypes from "prop-types"
 
 //import { useState } from 'react'
