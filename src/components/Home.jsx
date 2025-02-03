@@ -5,12 +5,13 @@ function Home(props) {
     <>
     <section id="home">
     <div className={`justify-items-center  text-${props.textColor}`}>
-      <div className=" mt-40 items-center p-1 text-black">
-        <a href="" className="bg-gradient-to-r from-purple-300 to-blue-300
-                               p-2 flex rounded-full items-center
-                              shadow-md transition delay-200 duration-400
-                              ease-in-out hover:scale-110 hover:translate-y-1
-                              outline-blue-500 outline ">
+      <div className=" mt-40 items-center p-1">
+        <a href="https://github.com/AryanShourya" target="_blank" rel="noopener noreferrer" 
+        className={`outline-gradient-to-r from-purple-300 to-blue-300
+                    p-2 flex rounded-full items-center 
+                    shadow-lg transition delay-200 duration-400
+                    ease-in-out hover:scale-110 hover:translate-y-1
+                    outline-blue-500 outline bg-${props.mode=="black"?"black":"slate-300"}`}>
         <label>Check out my GitHub</label>
         <span className="material-symbols-outlined ml-2 mr-2">open_in_new</span>
         </a>
