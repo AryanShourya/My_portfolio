@@ -16,7 +16,7 @@ export default function Technology(props) {
       <div className="justify-items-center font-bold text-l mt-5 scale-80
                        md:scale-100">
         
-        <ul className="p-4 gap-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 ">
+        <ul className="p-4 gap-6 grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 ">
           <li>
             <div className="skills-div ">
               <div className={`skills-border ${props.mode=="black"?"bg-slate-700":"bg-white"}`}>
