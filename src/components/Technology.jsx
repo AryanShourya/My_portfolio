@@ -9,11 +9,11 @@ export default function Technology(props) {
       <div className="items-center justify-center 
                     text-center mt-10">
         <h2 className="text-4xl md:text-6xl font-bold ">Texhnologies Skills</h2>
-        <p className="mt-5 font-semibold text-gray-400 text-l md:text-xl">
+        <p className="subheading">
           Tools and technologies I use to create solutions</p>
       </div>
 
-      <div className="justify-items-center font-bold text-l mt-5 scale-80
+      <div className="justify-items-center font-bold text-l mt-12 scale-80
                        md:scale-100">
         
         <ul className="p-4 gap-6 grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 ">

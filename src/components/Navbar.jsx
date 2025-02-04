@@ -68,11 +68,13 @@ export default function Navbar(props) {
                 className="hover:text-slate-500 cursor-pointer">Technologies</Link>
             </li>
             <li>
-                <Link to='project' className="hover:text-slate-500 cursor-pointer">
+                <Link to='project' smooth="true" duration={600} offset={-40}
+                className="hover:text-slate-500 cursor-pointer">
                 Projects</Link>
             </li>
             <li>
-                <Link to='contact' className="hover:text-slate-500 cursor-pointer">
+                <Link to='contact' smooth="true" duration={600} offset={-40}
+                 className="hover:text-slate-500 cursor-pointer">
                 Contact</Link>
             </li>
             <li>
