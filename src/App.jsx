@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Technology from './components/Technology'
+import Contact from './components/Contact'
 import './App.css'
 import { useState } from 'react'
 //import Sidebar from './components/Sidebar'
@@ -11,8 +12,8 @@ import { useState } from 'react'
 function App() {
     const [mode,setmode]=useState("white");
     const [textCol,setTextCol] = useState("gray-800");
-    const possible =["text-gray-800", "bg-white","text-neutral-300","bg-black","shadow-gray-300",
-      "shadow-white","bg-slate-700"
+    const possible =["text-gray-800", "bg-white","text-neutral-300","bg-black","shadow-gray-300","text-black",
+      "shadow-white","bg-slate-700","bg-gray-300","bg-[#2b2d2e]"
     ];
 
     const changeTheme =()=>{
@@ -27,6 +28,7 @@ function App() {
       <Navbar name="SHOURYA" mode={mode} textColor={textCol} changeTheme={changeTheme}/>
       <Home mode={mode} />
       <Technology mode={mode}/>
+      <Contact mode={mode} textColor={textCol}/>
       </div>
     </>
   )
