@@ -85,7 +85,7 @@ export default function Contact(props) {
                 <textarea className={`rounded-lg bg-${props.mode=="white"?"gray-300":"[#2b2d2e]"}
                                    px-4 min-h-10 placeholder:text-${props.textColor}`} 
                                  placeholder="Message"/>
-                <button className={`rounded-md h-8 bg-${props.mode=="black"?"white":"black"}
+                <button  className={`rounded-md h-8 bg-${props.mode=="black"?"white":"black"}
                                     text-${props.textColor=="neutral-300"?"gray-800":"neutral-300"}`}>
                     To Send
                 </button>
