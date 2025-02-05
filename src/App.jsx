@@ -4,10 +4,8 @@ import Technology from './components/Technology'
 import Contact from './components/Contact'
 import './App.css'
 import { useState } from 'react'
-//import Sidebar from './components/Sidebar'
-//import PropTypes from "prop-types"
+import Projects from './components/Projects'
 
-//import { useState } from 'react'
 
 function App() {
     const [mode,setmode]=useState("white");
@@ -28,6 +26,7 @@ function App() {
       <Navbar name="SHOURYA" mode={mode} textColor={textCol} changeTheme={changeTheme}/>
       <Home mode={mode} />
       <Technology mode={mode}/>
+      <Projects/>
       <Contact mode={mode} textColor={textCol}/>
       </div>
     </>
