@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import './App.css'
 import { useState } from 'react'
 import Projects from './components/Projects'
+import { Copyright } from '@mui/icons-material'
 
 
 function App() {
@@ -29,6 +30,11 @@ function App() {
       <Projects/>
       <Contact mode={mode} textColor={textCol}/>
       </div>
+      <footer className='justify-items-center min-h-40 w-screen place-content-center'>
+        <div className={`justify-items-center items-center text-${textCol}`}>
+          <Copyright/>
+          Coded by Aryan Shourya,2025.</div>
+      </footer>
     </>
   )
 }
