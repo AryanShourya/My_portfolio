@@ -30,7 +30,8 @@ function App() {
       <Projects/>
       <Contact mode={mode} textColor={textCol}/>
       </div>
-      <footer className='justify-items-center min-h-40 w-screen place-content-center'>
+      <footer className={`justify-items-center min-h-40 w-screen place-content-center border-t-[0.1px]
+                          border-${textCol}`}>
         <div className={`justify-items-center items-center text-${textCol}`}>
           <Copyright/>
           Coded by Aryan Shourya,2025.</div>
