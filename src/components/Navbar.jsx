@@ -18,7 +18,7 @@ export default function Navbar(props) {
     <>
     <Sidebar sbClick={sidebarClick} mode={props.mode} sbToggle={sidebarToggle} textColor={props.textColor}/> 
     <nav className={`fixed  bg-${props.mode}/80 text-${props.textColor}
-                     md:justify-items-center backdrop-blur-lg z-50
+                     md:justify-items-center backdrop-blur-lg z-500
                      content-center min-h-15 w-screen top-1 sm:min-w-[500px] 
                      border-neutral-300 border-b-[0.3px]`}> 
 
