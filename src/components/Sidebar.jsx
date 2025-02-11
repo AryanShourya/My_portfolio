@@ -11,7 +11,7 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 export default function Sidebar(props) {
   return (
     <>
-    <div className={`fixed top-15 w-[70%] bg-${props.mode} h-full z-20 animate-fade-right animate-once 
+    <div className={`fixed top-15 w-[70%] bg-${props.mode} h-full z-500 animate-fade-right animate-once 
                      ${props.sbToggle==true?"block":"hidden"} text-${props.textColor}`}>
         <div>
             <ul className="items-center ">
