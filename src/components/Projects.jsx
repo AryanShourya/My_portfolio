@@ -28,14 +28,14 @@ export default function Projects() {
                             <h2 className="text-2xl md:text-3xl font-bold">Project 1</h2>
                             <p className="mt-5"> Project details </p>
                             <div className="flex mt-4">
-                                <img className="rounded-full z-40 h-8 w-8" 
+                                <img className="projects-skill-image z-20" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
-                                <img className="rounded-full z-30 h-8 w-8" 
+                                <img className="projects-skill-image z-30 ml-6" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
-                                <img className="rounded-full h-8 w-8" 
+                                <img className="projects-skill-image z-40 ml-12" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
                             </div>
-                            <button className="mt-2 hover:scale-110 transition ">
+                            <button className="mt-12 hover:scale-110 transition ">
                                 <OpenInFull/>
                             </button>           
                         </div>
@@ -59,14 +59,14 @@ export default function Projects() {
                             <h2 className="text-2xl md:text-3xl font-bold">Project 2</h2>
                             <p className="mt-5"> Project details </p>
                             <div className="flex mt-4">
-                                <img className="rounded-full z-40 h-8 w-8" 
+                                <img className="projects-skill-image z-20" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
-                                <img className="rounded-full z-30 h-8 w-8" 
+                                <img className="projects-skill-image z-30 ml-6" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
-                                <img className="rounded-full h-8 w-8" 
+                                <img className="projects-skill-image z-40 ml-12" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
                             </div>
-                            <button className="mt-2 hover:scale-110 transition ">
+                            <button className="mt-12 hover:scale-110 transition ">
                                 <OpenInFull/>
                             </button>           
                         </div>
@@ -89,15 +89,16 @@ export default function Projects() {
                         <div className="md:order-1 p-8">
                             <h2 className="text-2xl md:text-3xl font-bold">Project 3</h2>
                             <p className="mt-5"> Project details </p>
-                            <div className="flex mt-4">
-                                <img className="rounded-full z-40 h-8 w-8" 
+                            <div className="flex mt-4 relative">
+                                <img className="projects-skill-image z-20 " 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
-                                <img className="rounded-full z-30 h-8 w-8" 
+                                <img className="absolute rounded-full z-30 h-8 w-8 ml-6" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
-                                <img className="rounded-full h-8 w-8" 
+                                <img className="absolute rounded-full h-8 w-8 z-40 ml-12" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
                             </div>
-                            <button className="mt-2 hover:scale-110 transition ">
+                            <button className="mt-12 hover:scale-110 transition outline-[0.1px]
+                                             outline-gray-300 rounded-lg">
                                 <OpenInFull/>
                             </button>           
                         </div>
