@@ -16,3 +16,7 @@
 @utility sidebar-items{
     @apply border-b-[0.2px] text-lg items-center border-slate-400 min-h-15 place-content-center font-semibold
 }
+
+@utility projects-skill-image{
+    @apply absolute rounded-full h-8 w-8;
+}

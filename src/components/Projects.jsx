@@ -1,7 +1,10 @@
 //import React from 'react'
 import { OpenInFull } from "@mui/icons-material"
+import { useState } from "react"
 
 export default function Projects() {
+    const [viewState,setViewState]= useState(false);
+
   return (
     <section id="project" className="mt-20 justify-items-center">
       <div className="text-center">
@@ -35,9 +38,9 @@ export default function Projects() {
                                 <img className="projects-skill-image z-40 ml-12" 
                                             src="src\resources\pictures\skills\langchain.png" alt="" />
                             </div>
-                            <button className="mt-12 hover:scale-110 transition ">
+                            <button className="mt-12 hover:scale-110 transition " onClick={setViewState(true)}>
                                 <OpenInFull/>
-                            </button>           
+                            </button>      
                         </div>
                     </a>
                 </div>
