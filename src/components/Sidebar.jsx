@@ -1,6 +1,7 @@
 //import React, { useState } from 'react'
 import PropTypes from "prop-types";
-import {Link} from "react-scroll"
+import {Link} from "react-scroll";
+import {Link as Reactlink} from 'react-router-dom';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -35,7 +36,7 @@ export default function Sidebar(props) {
                 </li>
 
                 <li className="sidebar-items">
-                    <Link onClick={props.sbClick} className="w-full hover:">
+                    <Link onClick={props.sbClick} to="project" smooth="true" offset={-70} className="w-full hover:">
                         <div className="items-center justify-between ml-2 flex p-2">
                             <h2>Projects</h2>
                             <ArrowForwardIcon/>
@@ -44,7 +45,7 @@ export default function Sidebar(props) {
                 </li>
 
                 <li className="sidebar-items">
-                    <Link onClick={props.sbClick} className="w-full hover:">
+                    <Link onClick={props.sbClick} to="contact" smooth="true" offset={-70} className="w-full hover:">
                         <div className="items-center justify-between ml-2 flex p-2">
                             <h2>Contact Me</h2>
                             <ArrowForwardIcon/>
@@ -53,12 +54,12 @@ export default function Sidebar(props) {
                 </li>
 
                 <li className="sidebar-items">
-                    <Link onClick={props.sbClick} className="w-full hover:">
+                    <Reactlink onClick={props.sbClick} to='/profile' className="w-full hover:">
                         <div className="items-center justify-between ml-2 flex p-2">
                             <h2>Profile</h2>
                             <ArrowForwardIcon/>
                         </div>
-                    </Link>
+                    </Reactlink>
                 </li>
 
                 <li className="sidebar-items">
