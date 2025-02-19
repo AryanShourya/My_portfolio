@@ -4,7 +4,8 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from "prop-types"
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as ReactLink} from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { useState } from 'react';
 
@@ -26,8 +27,7 @@ export default function Navbar(props) {
       <div className="flex md:hidden justify-between">
         <ul className=" p-2 flex w-screen">
             <li >
-                <Link to="home" smooth="true" offset={-70}
-                 className="text-xl font-bold">{props.name}</Link> 
+                <ReactLink to="/" className="text-xl font-bold">{props.name}</ReactLink> 
             </li>
         </ul>
         <ul className="flex py-2 px-4 space-x-4">
@@ -60,25 +60,28 @@ export default function Navbar(props) {
                       justify-between sm:w-screen ">
         <ul className="p-2 md:flex space-x-4 font-medium">
             <li>
-               <Link to="home" smooth="true" duration={600} offset={-80}
-               className="text-xl font-bold cursor-pointer">{props.name}</Link> 
+               <ReactLink to="/" className="text-xl font-bold cursor-pointer">{props.name}</ReactLink> 
             </li>
             <li>
-                <Link to="tech" smooth="true" duration={600} offset={-40}
-                className="hover:text-slate-500 cursor-pointer">Technologies</Link>
+               <ScrollLink to="home" smooth="true" duration={600} offset={-80}
+               className="hover:text-slate-500 cursor-pointer">Home</ScrollLink> 
             </li>
             <li>
-                <Link to='project' smooth="true" duration={600} offset={-60}
+                <ScrollLink to="tech" smooth="true" duration={600} offset={-40}
+                className="hover:text-slate-500 cursor-pointer">Technologies</ScrollLink>
+            </li>
+            <li>
+                <ScrollLink to='project' smooth="true" duration={600} offset={-60}
                 className="hover:text-slate-500 cursor-pointer">
-                Projects</Link>
+                Projects</ScrollLink>
             </li>
             <li>
-                <Link to='contact' smooth="true" duration={600} offset={-40}
+                <ScrollLink to='contact' smooth="true" duration={600} offset={-75}
                  className="hover:text-slate-500 cursor-pointer">
-                Contact</Link>
+                Contact</ScrollLink>
             </li>
             <li>
-                <a href='' className="hover:text-slate-500" >Profile</a>
+                <ReactLink to='/profile' className="hover:text-slate-500" >Profile</ReactLink>
             </li>
         </ul>
 
