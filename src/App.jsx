@@ -25,7 +25,7 @@ function App() {
     <>
       {document.body.style.backgroundColor = mode}
       <BrowserRouter>
-      <div className={`relative size-full justify-center bg-${mode} text-${textCol}` }>
+      <div className={`relative size-full justify-items-center bg-${mode} text-${textCol}` }>
       <Navbar name="SHOURYA" mode={mode} textColor={textCol} changeTheme={changeTheme}/>
       <Routes>
         <Route path='/' element={<First mode={mode} textColor={textCol}/>}/>
